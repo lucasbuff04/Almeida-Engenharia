@@ -32,7 +32,7 @@ p {
     font-size: 4rem;
     font-weight: 300;
     color: black;
-    margin-bottom: 10px;
+    margin-top: -85px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
@@ -49,6 +49,7 @@ p {
     color: crimson;
 }
 #logo-menu {
+    padding: 5px 5px;
     height: 90px;
     width: 240px;
 }
@@ -69,7 +70,7 @@ p {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    max-width: 1300px;
+    max-width: 1400px;
     padding: 0 10px;
 }
 #header .nav-list ul {
@@ -310,6 +311,7 @@ p {
     flex-direction: column;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     color: white;
+    border-radius: 5px;
 }
 
 #projects .project-info h1 {
@@ -332,6 +334,7 @@ p {
     height: 300px;
     overflow: hidden;
     position: relative;
+    border-radius: 5px;
 }
 
 #projects .project-img::after {
@@ -352,7 +355,131 @@ p {
 #projects .project-item:hover .project-img img {
     transform: scale(1.1);
 }
+#assuntos {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#assuntos .assuntos {
+    margin-top: -300px;
+}
+
+#assuntos h4 span {
+    color: crimson;
+    font-size: 4rem;
+}
+
+#assuntos h4 {
+    font-size: 4rem;
+}
+
+.assunto-container {
+    position: relative;
+    margin-top: -180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.assunto-container .card {
+    width: 280PX;
+    margin: 20PX;
+    padding: 40PX 30PX;
+    border-radius: 10px;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255,1),
+                -6px -6px 20px rgba(0, 0, 0,0.1);
+}
+
+.assunto-container .card:hover {
+    box-shadow: inset -6px -6px 10px rgba(255, 255, 255,0.5),
+                inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+
+.assunto-container .card .imgBx {
+    position: relative;
+    text-align: center;
+}
+
+.assunto-container .card .imgBx img {
+    max-width: 120px;
+}
+
+.assunto-container .card .contentBx {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
 /* End sessão projetos*/
+
+/* formulario */
+#form {
+    margin-top: 40px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    background: white;
+    text-align: center;
+}
+
+#form h3 span {
+    color: crimson;
+}
+
+#form .contact-form {
+    width: 100%;
+    max-width: 500px;
+}
+
+#form .form-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form .fild {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: gray;
+    font-size: 1.8rem;
+}
+
+#form textarea {
+    height: 150px;
+}
+
+#form .button-form {
+    background-color: crimson;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    #form {
+        width: 80%;
+        padding-left: 30px;
+    }
+    #form h3 span {
+        font-size: 20px;
+        display: flex;
+    }
+    #form .button-form {
+        margin-left: 30%;
+    }
+
+    #form textarea {
+        width: 290px;
+    }
+}
+/* End formulario*/
 
 /* footer */
 #footer {
@@ -480,5 +607,11 @@ p {
     #services .service-bottom .service-item {
         flex-basis: 22%;
         margin: 1.5%;
+    }
+}
+@media (max-width: 380px) {
+    .carousel .carousel-item img {
+        width: 100%;
+        height: 280px;
     }
 }
