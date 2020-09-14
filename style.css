@@ -12,7 +12,6 @@ html {
 }
 .container {
     min-height: 100vh;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,7 +320,6 @@ p {
     flex-direction: column;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     color: white;
-    border-radius: 5px;
 }
 
 #projects .project-info h1 {
@@ -344,7 +342,6 @@ p {
     height: 300px;
     overflow: hidden;
     position: relative;
-    border-radius: 5px;
 }
 
 #projects .project-img::after {
@@ -487,6 +484,11 @@ p {
 
     #form textarea {
         width: 290px;
+    }
+
+    #whatsapp .whats {
+        width: 42px;
+        height: 42px;
     }
 }
 /* End formulario*/
